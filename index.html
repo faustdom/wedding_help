@@ -19,20 +19,12 @@
             <input id="venue" type="number" min="1" value="1">
         </label>
         <label for="food">
-            Total Food Price:
+            Food Price Per Person:
             <input id="food" type="number" min="1" value="1">
         </label>
         <label for="drink">
-            Total Alcohol Price:
+            Alcohol Price Per Person:
             <input id="drink" type="number" min="1" value="1">
-        </label>
-        <label for="tax">
-            Total Tax:
-            <input id="tax" type="number" min="1" value="1">
-        </label>
-        <label for="grat">
-            Total Gratuity:
-            <input id="grat" type="number" min="1" value="1">
         </label>
 
         <button onclick="CalculateTotal()">Calculate</button>
@@ -46,6 +38,8 @@
     <div aria-live="polite" id="taxPer"></div>
     <div aria-live="polite" id="gratPer"></div>
     <div aria-live="polite" id="spacer"></div>
+    <div aria-live="polite" id="total"></div>
+    <div aria-live="polite" id="totalNoExtra"></div>
     <div aria-live="polite" id="perPerson"></div>
 </div>
 
