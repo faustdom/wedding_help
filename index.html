@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Wedding Calculator</title>
+    <link rel="stylesheet" href="wedCalcstyles.css">
+</head>
+
+<body>
+<div class="container">
+    <p>
+        <label for="people">
+            Total Number of People:
+            <input id="people" type="number" min="1" value="1">
+        </label>
+        <label for="venue">
+            Total Venue Price:
+            <input id="venue" type="number" min="1" value="1">
+        </label>
+        <label for="food">
+            Total Food Price:
+            <input id="food" type="number" min="1" value="1">
+        </label>
+        <label for="drink">
+            Total Alcohol Price:
+            <input id="drink" type="number" min="1" value="1">
+        </label>
+        <label for="tax">
+            Total Tax:
+            <input id="tax" type="number" min="1" value="1">
+        </label>
+        <label for="grat">
+            Total Gratuity:
+            <input id="grat" type="number" min="1" value="1">
+        </label>
+
+        <button onclick="CalculateTotal()">Calculate</button>
+    </p>
+</div>
+
+<div class="results-container">
+    <div aria-live="polite" id="venuePer"></div>
+    <div aria-live="polite" id="foodPer"></div>
+    <div aria-live="polite" id="drinkPer"></div>
+    <div aria-live="polite" id="taxPer"></div>
+    <div aria-live="polite" id="gratPer"></div>
+    <div aria-live="polite" id="spacer"></div>
+    <div aria-live="polite" id="perPerson"></div>
+</div>
+
+<script src="wedCalc.js"></script>
